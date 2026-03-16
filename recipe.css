@@ -1,24 +1,31 @@
-img {
-    height: 100%;
+HEADER img {
+    
     width: 100%;
     border-radius: 12px;
-    display: block;
+    height: 100%;
+    
+    
 }
 
 body {
-    background-color: beige;
-    margin: 0;
     padding: 48px 15px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     display: flex;
 
 }
 
-.contenu{
-     padding: 8px 32px 4px;
+hr{
+    border: none;
+    border-top: 1px solid #e8d8cc;
+    margin: 24px 0;
 }
+
+.contenu{
+     padding: 8px 32px 40px;
+}
+
 
 .contenu p{
     margin-bottom: 10px;
@@ -27,16 +34,15 @@ body {
 }
 
 .card{
-    border-radius: 20px;
+    border-radius: 28px;
     width: 100%;
-    overflow: hidden;
     max-width: 480px;
-    background:  beige;
-    box-shadow: 0 4px 32px rgba(80, 40, 20, 0.08);
+    background:  rgb(251, 232, 234);
+    
 }
 
 html {
-    background-color: #f3e5d8;
+    background: #fa88c1;
 
 }
 
@@ -77,7 +83,6 @@ strong{
 
 .list{
     list-style: disc;
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -117,6 +122,7 @@ h2 {
     margin-bottom: 14px;
     font-size: 1.6;
     font-weight: 400;
+    padding: 20px;
 }
 
 h1{
@@ -141,18 +147,41 @@ li{
     font-size: 0.8em;
     margin-bottom: 16px;
     line-height: 1.5;
+    padding: 8px 32px 40px;
 }
 
-tr {
+.nutrition.table{
+    width: 50%;
+    border-collapse:collapse;
+    
 
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-   
 }
 
-hr {
-    margin: 24px 0;
-    border: none;
-    border-top: 1px solid lightslategray;
+.nutrition-table tbody tr {
+  border-bottom: 1px solid #e8d8cc;
+  text-align: flex-end;
+  }
+
+  .nutrition-table td {
+  padding: 12px 15px;
+  text-align: center;
+  }
+
+  .nutrition-table td.label {
+  color: #5c4033;
+  font-weight: 400;
+  width: 60%;
+  padding: 15px 12px 14px 20px;
+  text-align: center;
+  }
+
+  .nutrition-table td.value {
+  color:  #7a3c2a;
+  font-weight: 600;
+  text-align: left;
 }
+
+
+
+
+
